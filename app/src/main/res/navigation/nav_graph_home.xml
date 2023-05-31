@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/fragmentOne">
+
+    <fragment
+        android:id="@+id/fragmentOne"
+        android:name="com.appdem.studentsFeature.FragmentStudents"
+        android:label="Students"
+        tools:layout="@layout/fragment_one" />
+    <fragment
+        android:id="@+id/fragmentTwo"
+        android:name="com.appdem.cameraFeature.FragmentCamera"
+        android:label="Camera"
+        tools:layout="@layout/fragment_camera">
+        <action
+            android:id="@+id/action_fragmentTwo_to_fragmentPictures"
+            app:destination="@id/fragmentPictures" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentThree"
+        android:name="com.appdem.settingsFeature.FragmentSettings"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings"/>
+    <fragment
+        android:id="@+id/fragmentPictures"
+        android:name="com.appdem.cameraFeature.FragmentPictures"
+        android:label="View notes" />
+</navigation>
