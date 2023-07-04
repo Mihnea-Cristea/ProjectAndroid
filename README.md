@@ -1,2 +1,2 @@
-# ProiectAndroid
- Proiect la Programarea pe Dispozitive Mobile
+# Android Project
+Android Mock Application with standard functionalities using Kotlin. 
